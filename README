@@ -1,0 +1,78 @@
+Simon Says Game in Scratch
+
+Overview
+
+Welcome to the Simon Says game built in Scratch! This is a fun and interactive game where a Game Master gives commands, and the player must follow them—but only if “Simon says” to do so! If the player clicks on the wrong ball or follows a command without “Simon says,” they lose the game.
+
+Features
+
+	•	Three balls: Ball, Baseball, and Basketball.
+	•	Game Master: Gives random commands for players to follow.
+	•	Simon says logic: Only follow commands that start with “Simon says.”
+	•	Score tracking: Track the player’s correct responses.
+	•	Randomized gameplay: The commands and balls are randomized to keep things interesting.
+
+How to Play
+
+	1.	Click the Green Flag to start the game.
+	2.	The Game Master will give a command, such as “Simon says click the basketball.”
+	3.	If “Simon says,” follow the command by clicking on the correct ball.
+	4.	If “Simon” doesn’t say, do not click on any ball.
+	5.	The game will continue to issue commands, and you must click only when appropriate.
+	6.	If you follow a command correctly, your score increases. If you follow a wrong command or click when “Simon didn’t say,” the game will end.
+
+Game Components
+
+Sprites
+
+	•	Game Master: The character that gives the commands.
+	•	Ball: A simple ball sprite.
+	•	Baseball: A baseball sprite.
+	•	Basketball: A basketball sprite.
+
+Variables
+
+	•	SimonCommand: Stores the current ball type that Simon says to click.
+	•	IsSimonSays: Stores whether the current command starts with “Simon says.”
+	•	Score: Tracks how many correct commands the player has followed.
+
+Project Structure
+
+Game Master Logic
+
+The Game Master randomly selects between:
+
+	•	“Simon says click the ball,” or
+	•	“Click the basketball” (without Simon saying).
+
+The commands are randomized using the pick random block, and players must determine if they should follow the command or not.
+
+Ball Sprites
+
+Each ball sprite (ball, baseball, and basketball) listens for mouse clicks:
+
+	•	If the clicked ball matches the SimonCommand and “Simon says,” the player gains a point.
+	•	If the player clicks incorrectly or clicks when “Simon” didn’t say, the game ends.
+
+How the Game is Coded
+
+	•	Random Ball Command: The Game Master uses pick random (1) to (3) to choose between the ball, baseball, and basketball.
+	•	Simon Says Logic: A random number determines whether “Simon says” is included in the command.
+	•	Player Input: Players must click the correct ball based on the command.
+	•	Game Over: If the player clicks the wrong ball or follows a command without “Simon says,” the game will stop.
+
+How to Customize
+
+	•	You can add additional commands or even more ball types by expanding the Game Master’s command list and adding new sprites.
+	•	Add sound effects or animations to enhance the gameplay experience.
+	•	Implement difficulty levels by decreasing the time between commands as the game progresses.
+
+Built With
+
+	•	Scratch: The game is built entirely using the Scratch programming platform.
+
+Getting Started
+
+	1.	Open the game in Scratch by visiting Scratch Website.
+	2.	Click on the Green Flag to start the game.
+	3.	Follow the on-screen instructions and enjoy playing Simon Says!
